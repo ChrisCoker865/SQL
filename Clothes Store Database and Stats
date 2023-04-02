@@ -1,0 +1,22 @@
+CREATE TABLE Clothes_shop (id INTEGER PRIMARY KEY, item TEXT, size TEXT, color TEXT, price INTEGER);
+
+INSERT INTO Clothes_shop VALUES (1, "Shirt", "Small", "red", "$10.01");
+INSERT INTO Clothes_shop VALUES (2, "Pants", "Small", "black", "$12.99");
+INSERT INTO Clothes_shop VALUES (3, "Shirt", "Medium", "blue", "$10.99");
+INSERT INTO Clothes_shop VALUES (4, "Pants", "Medium", "khaki", "$13.99");
+INSERT INTO Clothes_shop VALUES (5, "Shirt", "Large", "green", "$14.99");
+INSERT INTO Clothes_shop VALUES (6, "Pants", "Large", "khaki", "$15.99");
+INSERT INTO Clothes_shop VALUES (7, "Shirt", "X-large", "orange", "$16.99");
+INSERT INTO Clothes_shop VALUES (8, "Pants", "X-large", "black", "$16.99");
+INSERT INTO Clothes_shop VALUES (9, "Shirt", "Small", "purple", "$10.01");
+INSERT INTO Clothes_shop VALUES (10, "Pants", "Small", "khaki", "$12.99");
+INSERT INTO Clothes_shop VALUES (11, "Shirt", "Medium", "yellow", "$10.99");
+INSERT INTO Clothes_shop VALUES (12, "Pants", "Medium", "black", "$13.99");
+INSERT INTO Clothes_shop VALUES (13, "Shirt", "Large", "pink", "$14.99");
+INSERT INTO Clothes_shop VALUES (14, "Pants", "Large", "black", "$15.99");
+INSERT INTO Clothes_shop VALUES (15, "Pants", "X-large", "khaki", "$16.99");
+
+SELECT * FROM Clothes_shop
+Order by price;
+
+SELECT * FROM Clothes_shop WHERE size='Medium' ORDER BY price;
